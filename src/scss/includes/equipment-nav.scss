@@ -1,0 +1,27 @@
+.equipment-nav{
+  width: 100%;
+  text-align: center;
+
+  &__title{
+    padding-bottom: 20px;
+  }
+
+  &__item{
+    list-style-type: none;
+    padding-bottom: 15px;
+  }
+
+  &__link{
+    font-size: 16px;
+    color: #000;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    max-width: 250px;
+    text-align: left;
+  }
+}

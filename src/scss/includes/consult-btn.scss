@@ -1,0 +1,10 @@
+.consult-btn{
+  background-color: $main-second;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+
+  &:hover{
+    background-color: $main-second--hover;
+  }
+}

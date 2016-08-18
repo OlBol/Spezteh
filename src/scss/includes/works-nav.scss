@@ -1,0 +1,63 @@
+.works-nav{
+  padding: 20px 0;
+  text-align: center;
+  background: url(../img/portf-nav-bg.png) center no-repeat;
+  background-size: cover;
+  
+  &__title{
+    text-align: center;
+    color: $main-second;
+    padding-bottom: 20px;
+  }
+
+  &__list{
+    margin: 0 -10px;
+  }
+
+  &__item{
+    list-style-type: none;
+    padding-bottom: 20px;
+  }
+  
+  &__link{
+    font-size: 16px;
+    color: #fff;
+  }
+
+  @media (min-width: $screen-md){
+
+    & > .container{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__list{
+      width: 400px;
+      text-align: right;
+    }
+
+    &__item{
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+
+  @media (min-width: $screen-md){
+
+    & > .container{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__title{
+      padding-bottom: 0;
+    }
+
+    &__list{
+      width: 700px;
+      text-align: right;
+    }
+  }
+}

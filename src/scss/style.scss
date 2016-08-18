@@ -1,0 +1,27 @@
+@import 'global/normalize';
+@import 'variables';
+@import 'global/common';
+@import 'includes/page-header';
+@import 'includes/page-footer';
+
+// index page
+@import 'includes/promo-block';
+@import 'includes/consultation';
+@import 'includes/advantages';
+@import 'includes/offers';
+@import 'includes/recommend';
+@import 'includes/map';
+
+// portfolio page
+@import 'includes/works-nav';
+@import 'includes/building';
+
+// contacts page
+@import 'includes/contacts-promo';
+@import 'includes/contacts';
+@import 'includes/reviews';
+
+// catalog page
+@import 'includes/rent';
+@import 'includes/catalog';
+@import 'includes/special-offers';

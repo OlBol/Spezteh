@@ -1,0 +1,61 @@
+.promo-block{
+  background-image: url(../img/promo-block--bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+
+  & > .container{
+    padding: 100px 0;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  &__title{
+    text-transform: uppercase;
+    font-size: 44px;
+  }
+
+  &__text{
+    font-size: 20px;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    font-weight: normal;
+  }
+
+  &__btn{
+    padding: 10px 45px 10px 20px;
+    border: 2px solid $main-second;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url(../img/sprite/png-sprite.png);
+      width: 19px;
+      height: 10px;
+      background-position: -89px -58px;
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    & > .container{
+      padding: 150px 0;
+      width: 550px;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    & > .container{
+      padding: 200px 0;
+      width: 750px;
+    }
+  }
+
+}

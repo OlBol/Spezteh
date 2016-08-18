@@ -1,0 +1,57 @@
+.main-nav{
+  &__list{
+    display: none;
+  }
+
+  &__item{
+    list-style-type: none;
+  }
+
+  &__link{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    border: 2px solid transparent;
+    margin: 0 10px;
+
+    &:hover{
+      border: 2px solid #000;
+
+      .page-footer &{
+        border: 2px solid #fff;
+      }
+    }
+
+    .page-footer &{
+      color: #fff;
+    }
+  }
+  &__btn{
+    background-color: #ffe184;
+
+    .page-footer &{
+      color: $main-second;
+      background-color: inherit;
+    }
+  }
+
+  &__toggle{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  @media (min-width: $screen-lg){
+    &__toggle{
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+  }
+}

@@ -1,0 +1,8 @@
+- var navList = [{title: 'Гусеничные экскаваторы', link: 'catalog.html'}, {title: 'Колёсные экскаваторы', link: 'catalog.html'}, {title: 'Мини-экскаваторы', link: 'catalog.html'}, {title: 'Автокраны', link: 'catalog.html'}, {title: 'Фронтальные погрузчики', link: 'catalog.html'}, {title: 'Навесное оборудование', link: 'catalog.html'}, {title: 'Дизельгенераторы', link: 'catalog.html'}]
+
+nav.equipment-nav
+    h2.equipment-nav__title Вся техника
+    ul.equipment-nav__list
+        each item in navList
+            li.equipment-nav__item
+                a.equipment-nav__link(href=item.link)= item.title

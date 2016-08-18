@@ -1,0 +1,8 @@
+nav.main-nav
+    ul.main-nav__list
+        each item in navList
+            li.main-nav__item
+                a.main-nav__link(href=item.link)= item.title
+        li.main-nav__item
+            a.main-nav__link.main-nav__btn.main-nav__btn--header(href='#') Заказать звонок
+    a.main-nav__toggle(href='#') &#9776;

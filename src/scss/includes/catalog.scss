@@ -1,0 +1,77 @@
+.catalog{
+  padding: 50px 0;
+  background-color: #f3f3f3;
+
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  &__item{
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    border: 1px solid $main-second;
+    margin-bottom: 20px;
+  }
+
+  &__img{
+    padding: 20px 0;
+  }
+
+  &__price{
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  &__btn-wrapper{
+    width: 100%;
+  }
+
+  &__btn{
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+
+    &--rent{
+      background-color: $main-second;
+    }
+
+    &--more{
+      background-color: $main;
+    }
+  }
+
+  &__pages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__page{
+    padding: 10px;
+    text-decoration: none;
+    color: $main;
+    
+    &:hover, &:first-child{
+      background-color: $main;
+      color: #fff;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    & > .container{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__wrapper{
+      margin-top: 0;
+      width: 640px;
+    }
+  }
+}

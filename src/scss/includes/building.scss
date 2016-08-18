@@ -1,0 +1,75 @@
+.building{
+  &__item{
+    padding: 40px 0;
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      background-color: #000;
+      height: 10px;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__text{
+    padding: 20px 0;
+  }
+  
+  &__btn{
+    text-decoration: none;
+    background-color: $main-second;
+    color: #000;
+    padding: 10px 40px 10px 20px;
+    position: relative;
+
+    &::after{
+      content: '';
+      background-image: url(../img/sprite/png-sprite.png);
+      background-position: -73px -40px;
+      position: absolute;
+      width: 13px;
+      height: 19px;
+      top: 8px;
+      right: 15px;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &__item{
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      height: 500px;
+
+      &--cottage{
+        background-image: url(../img/cottage.png);
+      }
+
+      &--multi-storey{
+        background-image: url(../img/multi-storey.png);
+      }
+
+      &--house{
+        background-image: url(../img/house.png);
+      }
+    }
+    &__block{
+      top: 50%;
+      margin: 0 auto;
+      transform: translate(0, 50%);
+      background-color: #fff;
+      max-width: 350px;
+      padding: 20px 30px;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    &__block{
+      left: 0;
+      margin: 0;
+    }
+  }
+}

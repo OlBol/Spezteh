@@ -1,0 +1,54 @@
+.offers{
+  background-color: #f3f3f3;
+  padding: 50px 0;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__wrapper{
+    display: none;
+  }
+
+  &__title{
+    padding-bottom: 20px;
+  }
+
+  &__table{
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+
+    & th {
+      font-weight: normal;
+      padding: 10px 20px;
+    }
+
+    & thead th{
+      background: #dfdfdf;
+      font-weight: bold;
+    }
+
+    & tr:nth-child(2n){
+      background-color: #fff;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &__wrapper{
+      display: block;
+      padding-top: 30px;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    &__wrapper{
+      width: 700px;
+      padding-top: 0;
+    }
+  }
+}
+
+@import 'equipment-nav';

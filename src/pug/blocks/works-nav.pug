@@ -1,0 +1,9 @@
+- var navList = [{title: 'Все работы', link: '#'}, {title: 'Строительство', link: '#'}, {title: 'Демонтаж', link: '#'}, {title: 'Земляные работы', link: '#'}, {title: 'Перевозка', link: '#'}]
+
+.works-nav
+    .container
+        h2.works-nav__title Портфолио
+        ul.works-nav__list
+            each item in navList
+                li.works-nav__item
+                    a.works-nav__link(href=item.link)= item.title

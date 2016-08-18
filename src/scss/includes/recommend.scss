@@ -1,0 +1,80 @@
+.recommend{
+  background-color: $main;
+  padding: 45px 0;
+  color: #fff;
+  position: relative;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title{
+    padding-bottom: 20px;
+  }
+
+  &__numbers{
+    display: none;
+  }
+
+  &__clients{
+    width: 630px;
+  }
+
+  &__item{
+    list-style-type: none;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__number{
+    font-size: 38px;
+    color: $main-second;
+  }
+
+  &__comment{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  &__img{
+    padding: 0 20px 20px 0;
+  }
+
+  &__name{
+    display: block;
+    color: $main-second;
+    padding-top: 10px;
+  }
+
+  &::after, &::before{
+    content: '';
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    background-size: 35px 15px;
+    background-image: linear-gradient(135deg, #ffcd34 30%, #000 30%, #000 65%, #ffcd34 65%);
+  }
+
+  &::before{
+    top: 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    &__text{
+      width: 460px;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    &__numbers{
+      display: block;
+    }
+  }
+}
